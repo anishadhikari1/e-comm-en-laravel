@@ -1,5 +1,5 @@
 <!-- Footer -->
-<div class="container custom-login">
+<div style="clear:both" class="custom-login">
 <footer class="page-footer font-small blue pt-4">
 
   <!-- Footer Links -->
