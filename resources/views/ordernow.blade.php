@@ -28,17 +28,18 @@
   </tbody>
 </table>
 
-<form action="/action_page">
+<form action="/orderplace" method="post">
+    @csrf
   <div class="form-group">
   <label>Address </label>
-   <textarea placeholder="enter your delivery address" class="form-control"></textarea>
+   <textarea name="address" placeholder="enter your delivery address" class="form-control"></textarea>
   </div>
   <div class="form-group">
     <label>Payment Method: </label><br>
-    <input type="radio" name="payment"><span> Online payment</span><br><br>
-    <input type="radio" name="payment"><span> Paymant on delivery</span><br><br>
+    <input type="radio" value="cash" name="payment"><span> Online payment</span><br><br>
+    <input type="radio" value="cash" name="payment"><span> Paymant on delivery</span><br><br>
  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Order Now</button>
 </form>
     
     </div>
