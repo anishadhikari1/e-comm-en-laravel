@@ -30,7 +30,7 @@ $total = ProductController::cartItem();
 
     <ul class="nav navbar-nav navbar-right">
       <li>
-        <a class="nav-link" href="#">Cart({{$total}})</a>
+        <a class="nav-link" href="/cartlist">Cart({{$total}})</a>
       </li>
       @if(Session::has('user'))
       <li class="dropdown">
